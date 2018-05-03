@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ittepic.edu.mx.animatejava.MainActivity">
+
+    <ImageView
+        android:id="@+id/Icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/image"
+        android:tint="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnRun"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onButtonClick"
+            android:text="Animate" />
+    </LinearLayout>
+
+</RelativeLayout>
